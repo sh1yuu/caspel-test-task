@@ -1,0 +1,191 @@
+.app-container {
+	padding: 24px;
+	max-width: 1400px;
+	width: 100%;
+	.ant-input-affix-wrapper {
+		transition: box-shadow 0.2s ease;
+	}
+	.ant-input-affix-wrapper:hover,
+	.ant-input-affix-wrapper:focus-within {
+		box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+	}
+
+	.ant-modal-content {
+		animation: zoomIn 0.18s ease;
+	}
+
+	@keyframes zoomIn {
+		from {
+			transform: scale(0.98);
+			opacity: 0.5;
+		}
+		to {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+
+	.pagination-bar {
+		margin-top: 16px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.ant-table {
+		background: #fff;
+		border-radius: 10px;
+	}
+
+	.toolbar-search {
+		max-width: 320px;
+	}
+
+	.full-width {
+		width: 100% !important;
+	}
+
+	@media (max-width: 1024px) {
+		.ant-space {
+			gap: 8px !important;
+		}
+	}
+
+	@media (max-width: 768px) {
+		a {
+			font-size: 12px;
+		}
+		.ant-table-wrapper {
+			overflow-x: auto;
+		}
+		.ant-table {
+			font-size: 12px;
+		}
+		.ant-table-cell {
+			padding: 6px 8px !important;
+			white-space: nowrap;
+		}
+		.ant-tooltip-inner {
+			font-size: 12px;
+		}
+		.ant-table-column-title {
+			font-size: 12px;
+		}
+		.ant-table-cell {
+			font-size: 12px;
+		}
+		.ant-input {
+			font-size: 12px;
+		}
+		.ant-pagination-total-text {
+			font-size: 12px;
+		}
+	}
+
+	@media (max-width: 500px) {
+		a {
+			font-size: 10px;
+		}
+		.ant-table-wrapper {
+			overflow-x: auto;
+		}
+		.ant-table {
+			font-size: 10px;
+		}
+		.ant-table-cell {
+			padding: 4px 6px !important;
+			white-space: nowrap;
+		}
+		.ant-tooltip-inner {
+			font-size: 10px;
+		}
+		.ant-table-column-title {
+			font-size: 10px;
+		}
+		.ant-table-cell {
+			font-size: 10px;
+		}
+		.ant-input {
+			font-size: 10px;
+		}
+		.ant-pagination-total-text {
+			font-size: 10px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.ant-space {
+			gap: 6px !important;
+		}
+		.ant-input,
+		.ant-input-affix-wrapper {
+			width: 100% !important;
+			font-size: 10px;
+		}
+		.ant-table {
+			font-size: 10px;
+		}
+		& {
+			padding: 1px;
+		}
+		.ant-table-cell {
+			padding: 4px 6px !important;
+		}
+		a {
+			font-size: 8px;
+		}
+		.ant-table-wrapper {
+			overflow-x: auto;
+		}
+		.ant-table {
+			font-size: 8px;
+		}
+		.ant-table-cell {
+			padding: 2px 4px !important;
+			white-space: nowrap;
+		}
+		.ant-tooltip-inner {
+			font-size: 8px;
+		}
+		.ant-table-column-title {
+			font-size: 8px;
+		}
+		.ant-table-cell {
+			font-size: 8px;
+		}
+		.ant-input {
+			font-size: 8px;
+		}
+		.ant-pagination-total-text {
+			font-size: 8px;
+		}
+		.ant-tag {
+			font-size: 8px;
+		}
+		.ant-btn {
+			font-size: 10px;
+		}
+		.ant-btn-icon {
+			font-size: 10px;
+		}
+		.ant-btn-text {
+			font-size: 8px;
+		}
+		.label {
+			font-size: 8px;
+		}
+	}
+}
+
+.page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 24px;
+}
+
+@media (max-width: 480px) {
+	.page {
+		padding: 2px !important;
+	}
+}
